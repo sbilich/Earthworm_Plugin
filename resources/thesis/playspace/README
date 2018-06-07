@@ -1,0 +1,19 @@
+Nupur Garg
+ngarg@calpoly.edu
+Monday, April 4, 2016
+
+Parsers in Python:
+
+   Python   Internal library (ast)
+            http://eli.thegreenplace.net/2009/11/28/python-internals-working-with-python-asts
+   C        https://github.com/eliben/pycparser/tree/master/examples
+
+
+Resources I Used:
+
+   http://eli.thegreenplace.net/2009/11/28/python-internals-working-with-python-asts
+
+Run Program:
+
+   python test-parser.py source_code.py
+   python3 test-parser.py source_code_python3.py

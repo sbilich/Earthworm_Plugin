@@ -1,0 +1,43 @@
+<idea-plugin>
+  <id>earthworm.pycharm.plugin</id>
+  <name>Earthworm PyCharm Plugin</name>
+  <version>1.0</version>
+  <vendor email="sbilich@calpoly.edu" url="http://www.calpoly.com">Earthworm</vendor>
+
+  <description><![CDATA[The <b>Earthworm</b> plugin allows students
+  to receive recommendations on how to better decompose their code.]]></description>
+
+  <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.4127"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+
+  <depends>com.intellij.modules.python</depends>
+
+  <extensions defaultExtensionNs="Pythonid">
+  </extensions>
+
+<extensions defaultExtensionNs="com.intellij">
+  <codeInsight.lineMarkerProvider language="Python" implementationClass="Highlighter.EarthwormLineMarkerProvider"/>
+</extensions>
+
+  <actions>
+    <group id="Earthworm.Menu" text="EarthWorm" description="Sample menu">
+      <add-to-group group-id="MainMenu" anchor="last"  />
+      <group id="Earthworm.NoFlags" text="Basic Run" description="No flags">
+        <add-to-group group-id="Earthworm.Menu" anchor="last"  />
+        <!--<action id="Highlighter.EarthwormHighlighterManager" class="Highlighter.EarthwormHighlighterManager" text="Highlight" description="EarthWorm without flags" />-->
+        <action id="Highlighter.EarthwormPython2Runner" class="Highlighter.EarthwormPython2Runner" text="Python 2 file" description="EarthWorm without flags" />
+        <action id="Highlighter.EarthwormPython3Runner" class="Highlighter.EarthwormPython3Runner" text="Python 3 file" description="EarthWorm without flags" />
+      </group>
+    </group>
+  </actions>
+
+</idea-plugin>

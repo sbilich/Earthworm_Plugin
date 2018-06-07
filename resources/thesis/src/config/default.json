@@ -1,0 +1,15 @@
+{
+    "generating_suggestions": {
+        "min_diff_complexity_between_slices" : 3,
+        "min_diff_ref_and_live_var" : 4,
+        "min_linenos_diff_reference_livevar_instr" : 4
+    },
+
+    "validating_suggestions": {
+        "min_lines_in_suggestion" : 3,
+        "min_variables_parameter_in_suggestion" : 1,
+        "max_variables_parameter_in_suggestion" : 6,
+        "max_variables_return_in_suggestion" : 3,
+        "min_lines_func_not_in_suggestion" : 5
+    }
+}
